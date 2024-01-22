@@ -11,7 +11,7 @@ import { PostGeneratedImageReqDto } from '../linkedin/dto/postGeneratedImage.req
 export class PosterService {
   constructor(
     private readonly logger: LoggerService,
-    @InjectModel('Photo') private readonly modelModel: Model<Photo>, // Adjust the type based on your actual Photo model
+    @InjectModel('Photo') private readonly modelModel: Model<Photo>,
   ) {}
 
   async generatePoster({
